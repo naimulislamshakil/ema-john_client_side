@@ -7,9 +7,12 @@ const Navbar = () => {
     <div>
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand text-light fw-bold" href="#">
-            <Image src="/logo.png" width={150} height={50} alt="" />
-          </a>
+          <Link href="/">
+            <a className="navbar-brand text-light fw-bold">
+              <Image src="/logo.png" width={150} height={50} alt="" />
+            </a>
+          </Link>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -27,14 +30,14 @@ const Navbar = () => {
           >
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link href="#">
+                <Link href="">
                   <a className="nav-link active fw-bold" aria-current="page">
                     Home
                   </a>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="#">
+                <Link href="/all_product">
                   <a className="nav-link fw-bold">Link</a>
                 </Link>
               </li>
