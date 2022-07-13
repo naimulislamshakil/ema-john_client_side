@@ -1,6 +1,5 @@
 import Head from "next/head";
 import React from "react";
-import AllProduct from "../../pages/AllPages";
 import Banner from "../HomePage/Banner";
 import Product from "../HomePage/Product";
 
@@ -18,7 +17,6 @@ const Layout = ({ children }) => {
       <div>
         <Banner></Banner>
         <Product></Product>
-        <AllProduct></AllProduct>
       </div>
     </div>
   );
