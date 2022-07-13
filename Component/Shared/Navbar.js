@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
@@ -7,7 +8,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
           <a className="navbar-brand text-light fw-bold" href="#">
-            <Image src="/logo.png" width={150} height={50}></Image>
+            <Image src="/logo.png" width={150} height={50} alt="" />
           </a>
           <button
             className="navbar-toggler"
@@ -26,18 +27,16 @@ const Navbar = () => {
           >
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a
-                  className="nav-link active fw-bold"
-                  aria-current="page"
-                  href="#"
-                >
-                  Home
-                </a>
+                <Link href="#">
+                  <a className="nav-link active fw-bold" aria-current="page">
+                    Home
+                  </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link fw-bold" href="#">
-                  Link
-                </a>
+                <Link href="#">
+                  <a className="nav-link fw-bold">Link</a>
+                </Link>
               </li>
             </ul>
             <form className="d-flex" role="search">
