@@ -18,7 +18,7 @@ const Product = ({}) => {
         ))}
       </div>
       <div className="bg-light mt-3 d-flex justify-content-end">
-        <Link href={"/"}>
+        <Link href={"/all_product"}>
           <a className="h5 nav-link">{"See More >>>"}</a>
         </Link>
       </div>

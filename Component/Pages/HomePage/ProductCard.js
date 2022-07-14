@@ -11,6 +11,9 @@ const ProductCard = ({ product }) => {
           <h5 className="card-title">{name}</h5>
           <h6>Category: {category}</h6>
           <h6>Price: {price}</h6>
+          <div>
+            <span class="glyphicon glyphicon-star"></span>
+          </div>
         </div>
         <div className="card-footer">
           <button className="btn btn-primary">Place Order</button>

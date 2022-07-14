@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ProductCard from "../../Component/Pages/HomePage/ProductCard";
+import Navbar from "../../Component/Shared/Navbar";
 
 export const getStaticProps = async () => {
   const res = await fetch("http://localhost:5000/allproductcount");
@@ -31,6 +32,7 @@ const all_product = ({ data }) => {
   //   console.log(counts);
   return (
     <div>
+      <Navbar></Navbar>
       <h2 className="text-center mt-4 text-muted">Our Product</h2>
       <div className="row m-3">
         {products.map((product) => (

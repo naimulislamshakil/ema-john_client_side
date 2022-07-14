@@ -38,7 +38,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <Link href="/all_product">
-                  <a className="nav-link fw-bold">Link</a>
+                  <a className="nav-link fw-bold">All Product</a>
                 </Link>
               </li>
             </ul>
